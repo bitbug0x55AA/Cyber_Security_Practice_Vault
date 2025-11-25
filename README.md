@@ -40,11 +40,11 @@ A consolidated reference list of tools used throughout the PMAT course, along wi
 
 The methodology and learning path in this repository are derived from the excellent **Practical Malware Analysis & Triage (PMAT)** course by **HuskyHacks**.
 
-* **Course Author**: HuskyHacks (@HuskyHacksMK)
+* **Course Author**: HuskyHacks (@HuskyHacks)
 * **Course Link**: [Practical Malware Analysis & Triage @ TCM Security](https://academy.tcm-sec.com/p/practical-malware-analysis-triage)
 
 If you find these notes useful, I highly recommend purchasing the full course to support the creator.
 
 ---
 
-*Last Updated: 2024*
+*Last Updated: 2025*
