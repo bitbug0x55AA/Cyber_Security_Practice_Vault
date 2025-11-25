@@ -1,4 +1,4 @@
-Reference list for tools used in PMAT (Practical Malware Analysis & Triage). Use these links if automated installation fails.
+Reference list for tools used in PMAT (Practical Malware Analysis & Triage) and available safe malware sources for practice. Use these links if automated tools installation fails.
 
 # FLARE-VM / Windows Tools
 
@@ -43,3 +43,17 @@ Reference list for tools used in PMAT (Practical Malware Analysis & Triage). Use
 - MobSF (Docker): https://hub.docker.com/r/opensecurity/mobile-security-framework-mobsf/
 
 - INetSim: https://www.inetsim.org/
+
+# Safe Malware Sources
+
+- PMAT Labs: https://github.com/HuskyHacks/PMAT-labs
+
+- theZoo: https://github.com/ytisf/theZoo
+
+- vx-underground main site: https://www.vx-underground.org/
+
+- vx-underground GitHub repo: https://github.com/vxunderground/MalwareSourceCode
+
+- Zeltser Resources: https://zeltser.com/malware-sample-sources/
+
+- MalwareBazaar: https://bazaar.abuse.ch/
