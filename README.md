@@ -16,13 +16,13 @@ While the course recommends VirtualBox, I have opted to build an enterprise-grad
 
 ### 1. Lab Setup Guide
 This is the primary documentation in this repository. It details my custom approach to deploying a malware lab from scratch using XCP-ng.
-- **[📄 Read: Malware Analysis Lab Setup with XCP-ng](Environment%20&%20Resources/Malware%20Analysis%20Lab%20Setup%20with%20XCP-ng.md)**
+- **[📄 Read: Malware Analysis Lab Setup with XCP-ng](Environment/Malware%20Analysis%20Lab%20Setup%20with%20XCP-ng.md)**
     - **Highlights**: Features a **pfSense** controller for strict network isolation ("Dirty Line"), **REMnux** (Analysis Node), and **FlareVM** (Victim Node).
     - **Topics Covered**: Hardware requirements, Dom0 tuning, VLAN isolation, the pfSense "Kill Switch", and mitigations for anti-VM detection.
 
 ### 2. Tools & Resources
 A consolidated reference list of tools used throughout the PMAT course, along with safe sources for malware samples.
-- **[📄 Read: PMAT Tools List & Download Resources](Environment%20&%20Resources/PMAT%20Tools%20List%20&%20Download%20Resources.md)**
+- **[📄 Read: PMAT Tools List & Download Resources](Resources/PMAT%20Tools%20List%20&%20Download%20Resources.md)**
 
 ---
 
