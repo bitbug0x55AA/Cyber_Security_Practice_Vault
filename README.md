@@ -1,28 +1,45 @@
-# My Malware Analysis Lab & PMAT Notes
+# Malware Analysis & Reverse Engineering Portfolio
 
-![Category](https://img.shields.io/badge/Category-Malware%20Analysis-red)
-![Status](https://img.shields.io/badge/Status-Learning%20%2F%20In%20Progress-yellow)
+![Category](https://img.shields.io/badge/Category-Malware%20Analysis%20%26%20Reverse%20Engineering-red)
+![Status](https://img.shields.io/badge/Status-Active%20Learning-blue)
+![Focus](https://img.shields.io/badge/Focus-Lab%20Reports%20%26%20Practical%20Output-success)
 
-Welcome to my malware analysis repository! 👋
+Welcome to my malware analysis portfolio! 👋
 
-This project documents my journey through the **Practical Malware Analysis & Triage (PMAT)** course by **TCM Security**. It contains my personal study notes, resources, and configuration guides for building a safe analysis environment.
+This repository was originally initialized to document my progress through the **PMAT** course. However, my objectives have evolved into building a comprehensive skill tree in **Malware Analysis** and **Reverse Engineering**.
 
-> **Current Status**: 🌱 **Early Learning Stage**
-> I am currently focused on establishing a robust, isolated laboratory environment and organizing essential tooling.
+Consequently, this project now serves as a dedicated portfolio to archive my **practical outputs**, including engineering documentation for lab infrastructure, detailed analysis reports of malware samples, and reverse engineering exercises. It aims to document the journey from basic triage to advanced automation.
 
-## 📂 Current Contents
+## 🗺️ Roadmap & Learning Path
 
-While the course recommends VirtualBox, I have opted to build an enterprise-grade lab using **XCP-ng (Bare-metal Hypervisor)**.
+My learning path follows a structured progression from foundational analysis to low-level architecture, and finally to advanced reverse engineering and automation.
 
-### 1. Lab Setup Guide
-This is the primary documentation in this repository. It details my custom approach to deploying a malware lab from scratch using XCP-ng.
+| Stage | Course / Resource | Provider | Status | Focus |
+| :--- | :--- | :--- | :--- | :--- |
+| **01** | **Practical Malware Analysis & Triage (PMAT)** | TCM Security | 🟡 **In Progress** | Basic Static/Dynamic Analysis, Network Signatures, Report Writing |
+| **02** | **Architecture 1001: x86-64 Assembly** | OpenSecurityTraining2 | ⚪ *Planned* | Assembly Language, Low-level Computer Architecture |
+| **03** | **Zero2Hero Bootcamp** | Independent | ⚪ *Planned* | Malware Development Techniques, Advanced PE Structure, Evasion |
+| **04** | **Zero2Automated** | OALabs | ⚪ *Planned* | Advanced Reverse Engineering, Deobfuscation, Config Extraction |
+
+## 📂 Repository Contents
+
+This repository is strictly for engineering outputs and lab reports.
+
+### 1. Lab Infrastructure (Engineering)
+Documentation on building and maintaining an enterprise-grade analysis environment. I have opted to use **XCP-ng (Bare-metal Hypervisor)** instead of standard desktop virtualization to simulate a realistic, air-gapped network.
 - **[📄 Read: Malware Analysis Lab Setup with XCP-ng](Environment/Malware%20Analysis%20Lab%20Setup%20with%20XCP-ng.md)**
-    - **Highlights**: Features a **pfSense** controller for strict network isolation ("Dirty Line"), **REMnux** (Analysis Node), and **FlareVM** (Victim Node).
-    - **Topics Covered**: Hardware requirements, Dom0 tuning, VLAN isolation, the pfSense "Kill Switch", and mitigations for anti-VM detection.
+    - **Highlights**: Features a pfSense "Dirty Line" architecture, REMnux (Controller), FlareVM (Victim), and hardware-level anti-VM evasion hardening.
 
-### 2. Tools & Resources
-A consolidated reference list of tools used throughout the PMAT course, along with safe sources for malware samples.
-- **[📄 Read: PMAT Tools List & Download Resources](Resources/PMAT%20Tools%20List%20&%20Download%20Resources.md)**
+### 2. Analysis Reports (Lab Practice)
+Detailed reports derived from analyzing real-world or simulated malware samples. Each report includes extracted IOCs, behavioral analysis, and reverse engineering findings.
+- **Sample Reports**:
+    - [x] [Basic Static Analysis: Malware.Unknown.exe](Lab%20Practice/1-1.%20Basic-Static-Analysis-Practice-01.md)
+    - [ ] *Advanced Dynamic Analysis (Coming Soon)*
+    - [ ] *Unpacking & Deobfuscation (Coming Soon)*
+
+### 3. Tooling & Resources
+A consolidated reference list of the toolsets used throughout this learning path, along with vetted sources for obtaining safe malware samples.
+- **[📄 Read: Tools List & Download Resources](Resources/Tools%20List%20&%20Download%20Resources.md)**
 
 ---
 
@@ -30,20 +47,19 @@ A consolidated reference list of tools used throughout the PMAT course, along wi
 
 **Please Read Carefully:**
 
-1.  **Safety First**: This repository discusses handling live malware. All practical exercises must be performed inside a strictly isolated virtual machine (Sandbox). **NEVER** run malware samples on your host machine or production network.
-2.  **Educational Purpose**: The contents of this repository are for educational and defensive research purposes only. The author is not responsible for any misuse of the information provided.
-3.  **Personal Notes**: These are my personal study notes and are not a replacement for the official course materials.
+1.  **Safety First**: This repository contains references to and analysis of **live malware**. All practical exercises documented here were performed inside a strictly isolated, air-gapped virtualization environment. **NEVER** run malware samples on your host machine or production network.
+2.  **Educational Purpose**: The contents of this repository are for educational and defensive research purposes only. The objective is to understand threat behaviors to better defend against them.
+3.  **No Liability**: The author is not responsible for any damage caused by the misuse of the information or code provided in this repository.
 
 ---
 
-## 🙏 Credits & Acknowledgments
+## 🙏 Acknowledgments & Credits
 
-The methodology and learning path in this repository are derived from the excellent **Practical Malware Analysis & Triage (PMAT)** course by **HuskyHacks**.
+Special thanks to the creators of the high-quality training materials that guide this path:
 
-* **Course Author**: HuskyHacks (@HuskyHacks)
-* **Course Link**: [Practical Malware Analysis & Triage @ TCM Security](https://academy.tcm-sec.com/p/practical-malware-analysis-triage)
-
-If you find these notes useful, I highly recommend purchasing the full course to support the creator.
+* **HuskyHacks** (@HuskyHacks) - for the foundational *PMAT* course.
+* **XenoKovah** (@XenoKovah) - for the *OpenSecurityTraining2* architecture courses.
+* **Vitali Kremez & 0verfl0w_** - for the advanced *Zero2Automated* content.
 
 ---
 
