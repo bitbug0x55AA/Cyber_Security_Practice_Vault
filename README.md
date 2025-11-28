@@ -23,23 +23,27 @@ My learning path follows a structured progression from foundational analysis to 
 
 ## 📂 Repository Contents
 
-This repository is strictly for engineering outputs and lab reports.
+This repository is strictly for engineering outputs and practical documentation, organized as follows:
 
 ### 1. Lab Infrastructure (Engineering)
 Documentation on building and maintaining an enterprise-grade analysis environment. I have opted to use **XCP-ng (Bare-metal Hypervisor)** instead of standard desktop virtualization to simulate a realistic, air-gapped network.
 - **[📄 Read: Malware Analysis Lab Setup with XCP-ng](Environment/Malware%20Analysis%20Lab%20Setup%20with%20XCP-ng.md)**
     - **Highlights**: Features a pfSense "Dirty Line" architecture, REMnux (Controller), FlareVM (Victim), and hardware-level anti-VM evasion hardening.
 
-### 2. Analysis Reports (Lab Practice)
-Detailed reports derived from analyzing real-world or simulated malware samples. Each report includes extracted IOCs, behavioral analysis, and reverse engineering findings.
-- **Sample Reports**:
-    - [x] [Basic Static Analysis: Malware.Unknown.exe](Lab%20Practice/1-1.%20Basic-Static-Analysis-Practice-01.md)
-    - [ ] *Advanced Dynamic Analysis (Coming Soon)*
-    - [ ] *Unpacking & Deobfuscation (Coming Soon)*
+### 2. Lab Practice & Analysis Output
+I categorize my practical work into two distinct types based on the scope of analysis:
+
+* **Technique Drills (Lab Notes)**
+    Focused records of specific skill-building exercises (e.g., *Basic Static Analysis*, *Unpacking*, *YARA Rule Writing*). These documents serve as technical lab notes to reinforce individual concepts rather than full threat intelligence reports.
+
+* **Comprehensive Analysis Reports**
+    Full-spectrum reports on specific malware samples. These documents simulate real-world deliverables, covering the complete lifecycle from static triage and dynamic behavior analysis to advanced reverse engineering findings.
 
 ### 3. Tooling & Resources
 A consolidated reference list of the toolsets used throughout this learning path, along with vetted sources for obtaining safe malware samples.
 - **[📄 Read: Tools List & Download Resources](Resources/Tools%20List%20&%20Download%20Resources.md)**
+
+---
 
 ---
 
