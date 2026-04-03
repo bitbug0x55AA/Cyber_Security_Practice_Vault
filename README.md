@@ -45,16 +45,6 @@ Rather than categorizing by training providers or certifications, the knowledge 
 
 All exercises and malware detonations are conducted within a strictly isolated, purpose-built bare-metal home lab environment running on **XCP-ng**. Network segregation, snapshots, and traffic routing are detailed within the `00_Lab_Infrastructure` directory to ensure reproducible testing.
 
-## 📜 Write-up Standard
-
-To maintain consistency across all technical domains, every new lab or case study documented in this repository follows a unified reporting structure:
-
-1. **Executive Summary / Scenario**: A brief overview of the incident, malware, or target box.
-2. **Environment & Tools**: Lab setup, IP ranges, and specific tools utilized (e.g., x64dbg, Volatility 3, Splunk).
-3. **Analysis / Attack Chain**: The step-by-step technical methodology, including screenshots, command snippets, and raw logs.
-4. **Indicators of Compromise (IOCs)**: Hashes, IPs, domains, or memory signatures identified.
-5. **Detection & Mitigation**: How to spot this activity in a production environment (SIEM queries, EDR telemetry).
-
 ---
 
 *Maintained by Juana | Cyber Security Analyst* *Last Updated: March 2026*
