@@ -12,17 +12,19 @@ Rather than categorizing by training providers or certifications, the knowledge 
 
 ## 📂 Repository Structure
 
+```
     .
     ├── 00_Lab_Infrastructure/              # Home lab architecture and automation
-    │   ├── XCP-ng_Base_Setup/              # Foundational hypervisor configurations
+    │   ├── XCP-ng_Base_Setup/              # Foundational hypervisor configurations & Inventory
     │   ├── Active_Directory_Ranges/        # AD ranges for exploitation & detection testing
-    │   └── Docker_and_Tooling/             # Containerized pipelines (e.g., CTI Streamliner)
+    │   └── Docker_and_Tooling/             # Containerized pipelines
     │
     ├── 01_SOC_and_DFIR/                    # Defensive operations and response
     │   ├── Log_Analysis_and_SIEM/          # Splunk/ELK hunting hypotheses and queries
-    │   ├── Memory_and_Disk_Forensics/      # Artifact extraction and memory analysis (e.g., Volatility)
+    │   ├── Memory_and_Disk_Forensics/      # Artifact extraction and memory analysis
     │   ├── Network_Traffic_Analysis/       # PCAP analysis and NIDS signature testing
-    │   └── Detection_Rule_Engineering/     # Testing and validating Sigma/Yara rules
+    │   ├── Detection_Rule_Engineering/     # Testing and validating Sigma/Yara rules
+    │   └── End_to_End_Incidents/           # Multi-domain defense labs
     │
     ├── 02_Malware_Analysis_and_Research/   # Reverse engineering and malware behavior
     │   ├── Static_and_Dynamic_Analysis/    # Triage and behavioral analysis notes
@@ -34,8 +36,10 @@ Rather than categorizing by training providers or certifications, the knowledge 
     │
     └── 04_Offensive_Security/              # Adversary emulation and exploitation
         ├── Penetration_Testing_Basics/     # Vulnerability assessment records
-        ├── AD_Exploitation/                # Attack chain reproduction (e.g., Pass-the-Ticket, Kerberoasting)
-        └── Adversary_Emulation/            # End-to-end APT simulation plans
+        ├── AD_Exploitation/                # Attack chain reproduction
+        ├── Adversary_Emulation/            # Isolated red team exercises and AE plans
+        └── Full_Kill_Chain_Emulation/      # End-to-end multi-stage targets
+```
 
 ## 🏗️ Lab Infrastructure
 
