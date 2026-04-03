@@ -72,7 +72,7 @@ This roadmap tracks my continuous progression toward becoming a Purple Team expe
 #### 2027: Offensive & AD Mastery
 * **CRTP** (Certified Red Team Professional)
 * **CRTO** (Certified Red Team Operator)
-* **CREST CPTIA**
+* **CREST CPTIA** (CREST Practitioner Threat Intelligence Analyst)
 
 #### 2028: Expert Level Penetration Testing
 * **CPTS** (Certified Penetration Testing Specialist)
