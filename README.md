@@ -1,70 +1,56 @@
-# Malware Analysis & Reverse Engineering Portfolio
+# Cyber Security Training Vault
 
-![Category](https://img.shields.io/badge/Category-Malware%20Analysis%20%26%20Reverse%20Engineering-red)
-![Status](https://img.shields.io/badge/Status-Active%20Learning-blue)
-![Focus](https://img.shields.io/badge/Focus-Lab%20Reports%20%26%20Practical%20Output-success)
+> A comprehensive repository of practical labs, adversary emulation exercises, and defense engineering write-ups.
 
-Welcome to my malware analysis portfolio! 👋
+## 🎯 Overview
 
-This repository was originally initialized to document my progress through the **PMAT** course. However, my objectives have evolved into building a comprehensive skill tree in **Malware Analysis** and **Reverse Engineering**.
+This repository serves as my primary staging ground and training vault. It chronicles my hands-on journey toward becoming a Purple Team expert, bridging the gap between offensive security tactics and proactive defense engineering. 
 
-Consequently, this project now serves as a dedicated portfolio to archive my **practical outputs**, including engineering documentation for lab infrastructure, detailed analysis reports of malware samples, and reverse engineering exercises. It aims to document the journey from basic triage to advanced automation.
+Rather than categorizing by training providers or certifications, the knowledge here is structured by **Technical Domains** to mirror industrial Security Operations Center (SOC) and Digital Forensics and Incident Response (DFIR) workflows.
 
-## 🗺️ Roadmap & Learning Path
+*Note: For highly distilled tactical checklists, detection rules (Sigma/Yara), and IR playbooks derived from these exercises, please refer to my central playbook repository: `blue_team_hunting_field_notes`.*
 
-My learning path follows a structured progression from foundational analysis to low-level architecture, and finally to advanced reverse engineering and automation.
+## 📂 Repository Structure
 
-| Stage | Course / Resource | Provider | Status | Focus |
-| :--- | :--- | :--- | :--- | :--- |
-| **01** | **Practical Malware Analysis & Triage (PMAT)** | TCM Security | 🟡 **In Progress** | Basic Static/Dynamic Analysis, Network Signatures, Report Writing |
-| **02** | **Architecture 1001: x86-64 Assembly** | OpenSecurityTraining2 | ⚪ *Planned* | Assembly Language, Low-level Computer Architecture |
-| **03** | **Zero2Hero Bootcamp** | Independent | ⚪ *Planned* | Malware Development Techniques, Advanced PE Structure, Evasion |
-| **04** | **Zero2Automated** | OALabs | ⚪ *Planned* | Advanced Reverse Engineering, Deobfuscation, Config Extraction |
+    .
+    ├── 00_Lab_Infrastructure/              # Home lab architecture and automation
+    │   ├── XCP-ng_Base_Setup/              # Foundational hypervisor configurations
+    │   ├── Active_Directory_Ranges/        # AD ranges for exploitation & detection testing
+    │   └── Docker_and_Tooling/             # Containerized pipelines (e.g., CTI Streamliner)
+    │
+    ├── 01_SOC_and_DFIR/                    # Defensive operations and response
+    │   ├── Log_Analysis_and_SIEM/          # Splunk/ELK hunting hypotheses and queries
+    │   ├── Memory_and_Disk_Forensics/      # Artifact extraction and memory analysis (e.g., Volatility)
+    │   ├── Network_Traffic_Analysis/       # PCAP analysis and NIDS signature testing
+    │   └── Detection_Rule_Engineering/     # Testing and validating Sigma/Yara rules
+    │
+    ├── 02_Malware_Analysis_and_Research/   # Reverse engineering and malware behavior
+    │   ├── Static_and_Dynamic_Analysis/    # Triage and behavioral analysis notes
+    │   └── Advanced_Malware_Research/      # Deep dives into specific malware families
+    │
+    ├── 03_Cyber_Threat_Intelligence/       # Threat profiling and OSINT
+    │   ├── OSINT_and_Campaign_Tracking/    # Open-source intelligence practicals
+    │   └── Threat_Modeling_Practices/      # Adversary infrastructure mapping
+    │
+    └── 04_Offensive_Security/              # Adversary emulation and exploitation
+        ├── Penetration_Testing_Basics/     # Vulnerability assessment records
+        ├── AD_Exploitation/                # Attack chain reproduction (e.g., Pass-the-Ticket, Kerberoasting)
+        └── Adversary_Emulation/            # End-to-end APT simulation plans
 
-## 📂 Repository Contents
+## 🏗️ Lab Infrastructure
 
-This repository is strictly for engineering outputs and practical documentation, organized as follows:
+All exercises and malware detonations are conducted within a strictly isolated, purpose-built bare-metal home lab environment running on **XCP-ng**. Network segregation, snapshots, and traffic routing are detailed within the `00_Lab_Infrastructure` directory to ensure reproducible testing.
 
-### 1. Lab Infrastructure (Engineering)
-Documentation on building and maintaining an enterprise-grade analysis environment. I have opted to use **XCP-ng (Bare-metal Hypervisor)** instead of standard desktop virtualization to simulate a realistic, air-gapped network.
-- **[📄 Read: Malware Analysis Lab Setup with XCP-ng](Environment/Malware%20Analysis%20Lab%20Setup%20with%20XCP-ng.md)**
-    - **Highlights**: Features a pfSense "Dirty Line" architecture, REMnux (Controller), FlareVM (Victim), and hardware-level anti-VM evasion hardening.
+## 📜 Write-up Standard
 
-### 2. Lab Practice & Analysis Output
-I categorize my practical work into two distinct types based on the scope of analysis:
+To maintain consistency across all technical domains, every new lab or case study documented in this repository follows a unified reporting structure:
 
-* **Technique Drills (Lab Notes)**
-    Focused records of specific skill-building exercises (e.g., *Basic Static Analysis*, *Unpacking*, *YARA Rule Writing*). These documents serve as technical lab notes to reinforce individual concepts rather than full threat intelligence reports.
-
-* **Comprehensive Analysis Reports**
-    Full-spectrum reports on specific malware samples. These documents simulate real-world deliverables, covering the complete lifecycle from static triage and dynamic behavior analysis to advanced reverse engineering findings.
-
-### 3. Tooling & Resources
-A consolidated reference list of the toolsets used throughout this learning path, along with vetted sources for obtaining safe malware samples.
-- **[📄 Read: Tools List & Download Resources](Resources/Tools%20List%20&%20Download%20Resources.md)**
-
----
-
----
-
-## ⚠️ Disclaimer
-
-**Please Read Carefully:**
-
-1.  **Safety First**: This repository contains references to and analysis of **live malware**. All practical exercises documented here were performed inside a strictly isolated, air-gapped virtualization environment. **NEVER** run malware samples on your host machine or production network.
-2.  **Educational Purpose**: The contents of this repository are for educational and defensive research purposes only. The objective is to understand threat behaviors to better defend against them.
-3.  **No Liability**: The author is not responsible for any damage caused by the misuse of the information or code provided in this repository.
+1. **Executive Summary / Scenario**: A brief overview of the incident, malware, or target box.
+2. **Environment & Tools**: Lab setup, IP ranges, and specific tools utilized (e.g., x64dbg, Volatility 3, Splunk).
+3. **Analysis / Attack Chain**: The step-by-step technical methodology, including screenshots, command snippets, and raw logs.
+4. **Indicators of Compromise (IOCs)**: Hashes, IPs, domains, or memory signatures identified.
+5. **Detection & Mitigation**: How to spot this activity in a production environment (SIEM queries, EDR telemetry).
 
 ---
 
-## 🙏 Acknowledgments & Credits
-
-Special thanks to the creators of the high-quality training materials that guide this path:
-
-* **HuskyHacks** (@HuskyHacks) - for the foundational *PMAT* course.
-* **XenoKovah** (@XenoKovah) - for the *OpenSecurityTraining2* architecture courses.
-* **Vitali Kremez & 0verfl0w_** - for the advanced *Zero2Automated* content.
-
----
-
-*Last Updated: 2025*
+*Maintained by Juana | Cyber Security Analyst* *Last Updated: March 2026*
