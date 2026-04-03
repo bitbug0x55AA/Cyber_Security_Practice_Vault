@@ -27,7 +27,7 @@ Rather than categorizing by training providers or certifications, the knowledge 
     │   └── End_to_End_Incidents/           # Multi-domain defense labs
     │
     ├── 02_Malware_Analysis_and_Research/   # Reverse engineering and malware behavior
-    │   ├── Static_and_Dynamic_Analysis/    # Triage and behavioral analysis notes
+    │   ├── Basic_Static_and_Dynamic_Analysis/    # Triage and behavioral analysis notes
     │   └── Advanced_Malware_Research/      # Deep dives into specific malware families
     │
     ├── 03_Cyber_Threat_Intelligence/       # Threat profiling and OSINT
