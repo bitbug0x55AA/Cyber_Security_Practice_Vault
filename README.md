@@ -14,31 +14,34 @@ Rather than categorizing by training providers or certifications, the knowledge 
 
 ```
     .
-    ├── 00_Lab_Infrastructure/              # Home lab architecture and automation
-    │   ├── XCP-ng_Base_Setup/              # Foundational hypervisor configurations & Inventory
-    │   ├── Active_Directory_Ranges/        # AD ranges for exploitation & detection testing
-    │   └── Docker_and_Tooling/             # Containerized pipelines
+    ├── 00_Lab_Infrastructure/             
+    │   ├── XCP-ng_Base_Setup/             
+    │   ├── Active_Directory_Ranges/        
+    │   └── Docker_and_Tooling/            
     │
-    ├── 01_SOC_and_DFIR/                    # Defensive operations and response
-    │   ├── Log_Analysis_and_SIEM/          # Splunk/ELK hunting hypotheses and queries
-    │   ├── Memory_and_Disk_Forensics/      # Artifact extraction and memory analysis
-    │   ├── Network_Traffic_Analysis/       # PCAP analysis and NIDS signature testing
-    │   ├── Detection_Rule_Engineering/     # Testing and validating Sigma/Yara rules
-    │   └── End_to_End_Incidents/           # Multi-domain defense labs
+    ├── 01_SOC_and_DFIR/                   
+    │   ├── Log_Analysis_and_SIEM/          
+    │   ├── Memory_and_Disk_Forensics/     
+    │   ├── Network_Traffic_Analysis/      
+    │   ├── Detection_Rule_Engineering/    
+    │   └── End_to_End_Incidents/          
     │
-    ├── 02_Malware_Analysis_and_Research/   # Reverse engineering and malware behavior
-    │   ├── Basic_Static_and_Dynamic_Analysis/    # Triage and behavioral analysis notes
-    │   └── Advanced_Malware_Research/      # Deep dives into specific malware families
+    ├── 02_Malware_Analysis_and_Research/   
+    │   ├── Basic_Static_and_Dynamic_Analysis/   
+    │   └── Advanced_Malware_Research/     
     │
-    ├── 03_Cyber_Threat_Intelligence/       # Threat profiling and OSINT
-    │   ├── OSINT_and_Campaign_Tracking/    # Open-source intelligence practicals
-    │   └── Threat_Modeling_Practices/      # Adversary infrastructure mapping
+    ├── 03_Cyber_Threat_Intelligence/       
+    │   ├── OSINT_and_Campaign_Tracking/   
+    │   └── Threat_Modeling_Practices/     
     │
-    └── 04_Offensive_Security/              # Adversary emulation and exploitation
-        ├── Penetration_Testing_Basics/     # Vulnerability assessment records
-        ├── AD_Exploitation/                # Attack chain reproduction
-        ├── Adversary_Emulation/            # Isolated red team exercises and AE plans
-        └── Full_Kill_Chain_Emulation/      # End-to-end multi-stage targets
+    └── 04_Offensive_Security/
+        ├── 04.1_Recon_and_Enumeration/           
+        ├── 04.2_Exploitation_Techniques/         
+        ├── 04.3_Web_Application_Penetration/     
+        ├── 04.4_Active_Directory_Attacks/        
+        ├── 04.5_Post_Exploitation_and_Pivoting/  
+        ├── 04.6_Integrated_Lab_Challenges/  
+        └── 04.7_Full_Kill_Chain_Emulation/       
 ```
 
 ## 🏗️ Lab Infrastructure
