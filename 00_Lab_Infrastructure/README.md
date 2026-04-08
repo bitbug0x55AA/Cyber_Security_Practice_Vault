@@ -49,7 +49,7 @@ The following table tracks the active staging, monitoring, and detonation target
 
 | Hostname | OS / Platform | Primary Role | Segment | Notes |
 | :--- | :--- | :--- | :--- | :--- |
-| `WIN-FLARE` | Windows 10/11 | Malware Detonation & DFIR | LAN | Dual-purpose analysis box. Reverted to clean snapshot post-detonation. |
+| `WIN-FLARE` | Windows 10 | Malware Detonation & DFIR | LAN | Dual-purpose analysis box. Reverted to clean snapshot post-detonation. |
 | `REMNUX-01` | Ubuntu 20.04 | Network Simulator / Toolkit | LAN | Used intermittently with FlareVM for network traffic analysis and simulation. |
 
 ### 3. Adversary Emulation Range (Adversary)
